@@ -76,5 +76,41 @@ return [
     ],
     'install' => [
         'date' => 'Thu, 08 Oct 2020 15:05:28 +0000'
+    ],
+    'system' => [
+        'default' => [
+            'web' => [
+                'unsecure' => [
+                    'base_url' => 'https://maksym-aliatin235.local/',
+                    'base_link_url' => '{{unsecure_base_url}}',
+                    'base_static_url' => 'https://maksym-aliatin235.local/static/',
+                    'base_media_url' => 'https://maksym-aliatin235.local/media/'
+                ],
+                'secure' => [
+                    'base_url' => 'https://maksym-aliatin235.local/',
+                    'base_link_url' => '{{secure_base_url}}',
+                    'base_static_url' => 'https://maksym-aliatin235.local/static/',
+                    'base_media_url' => 'https://maksym-aliatin235.local/media/'
+                ]
+            ]
+        ],
+        'websites' => [
+            'new_website' => [
+                'web' => [
+                    'unsecure' => [
+                        'base_url' => 'https://new-maksym-aliatin235.local/',
+                        'base_link_url' => 'https://new-maksym-aliatin235.local/',
+                        'base_static_url' => 'https://new-maksym-aliatin235.local/static/',
+                        'base_media_url' => 'https://new-maksym-aliatin235.local/media/'
+                    ],
+                    'secure' => [
+                        'base_url' => 'https://new-maksym-aliatin235.local/',
+                        'base_link_url' => 'https://new-maksym-aliatin235.local/',
+                        'base_static_url' => 'https://new-maksym-aliatin235.local/static/',
+                        'base_media_url' => 'https://new-maksym-aliatin235.local/media/'
+                    ]
+                ]
+            ]
+        ]
     ]
 ];
