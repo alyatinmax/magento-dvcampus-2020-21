@@ -14,8 +14,8 @@ return [
         'connection' => [
             'default' => [
                 'host' => 'mysql',
-                'dbname' => 'dev-maksym_aliatin235_local',
-                'username' => 'dev-maksym_aliatin235_local',
+                'dbname' => 'dev_maksym_aliatin235_local',
+                'username' => 'dev_maksym_aliatin235_local',
                 'password' => 'ESGSERRvewsg[0349ujiwpernkl',
                 'model' => 'mysql4',
                 'engine' => 'innodb',
