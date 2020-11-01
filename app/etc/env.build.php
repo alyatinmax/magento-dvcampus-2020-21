@@ -14,9 +14,9 @@ return [
         'connection' => [
             'default' => [
                 'host' => 'mysql',
-                'dbname' => 'dev_maksym_aliatin235_local',
-                'username' => 'dev_maksym_aliatin235_local',
-                'password' => 'ESGSERRvewsg[0349ujiwpernkl',
+                'dbname' => 'build_maksym_aliatin235_local',
+                'username' => 'build_maksym_aliatin235_local',
+                'password' => 'aSDL:vu;340789-0mzsdg',
                 'model' => 'mysql4',
                 'engine' => 'innodb',
                 'initStatements' => 'SET NAMES utf8;',
@@ -72,7 +72,7 @@ return [
         'vertex' => 1
     ],
     'downloadable_domains' => [
-        'dev-maksym-aliatin235.local'
+        'build-maksym-aliatin235.local'
     ],
     'install' => [
         'date' => 'Thu, 08 Oct 2020 15:05:28 +0000'
@@ -81,16 +81,16 @@ return [
         'default' => [
             'web' => [
                 'unsecure' => [
-                    'base_url' => 'https://dev-maksym-aliatin235.local/',
+                    'base_url' => 'https://build-maksym-aliatin235.local/',
                     'base_link_url' => '{{unsecure_base_url}}',
-                    'base_static_url' => 'https://dev-maksym-aliatin235.local/static/',
-                    'base_media_url' => 'https://dev-maksym-aliatin235.local/media/'
+                    'base_static_url' => 'https://build-maksym-aliatin235.local/static/',
+                    'base_media_url' => 'https://dbuild-maksym-aliatin235.local/media/'
                 ],
                 'secure' => [
-                    'base_url' => 'https://dev-maksym-aliatin235.local/',
+                    'base_url' => 'https://build-maksym-aliatin235.local/',
                     'base_link_url' => '{{secure_base_url}}',
-                    'base_static_url' => 'https://dev-maksym-aliatin235.local/static/',
-                    'base_media_url' => 'https://dev-maksym-aliatin235.local/media/'
+                    'base_static_url' => 'https://build-maksym-aliatin235.local/static/',
+                    'base_media_url' => 'https://build-maksym-aliatin235.local/media/'
                 ]
             ]
         ],
@@ -98,16 +98,16 @@ return [
             'new_website' => [
                 'web' => [
                     'unsecure' => [
-                        'base_url' => 'https://dev-new-maksym-aliatin235.local/',
-                        'base_link_url' => 'https://dev-new-maksym-aliatin235.local/',
-                        'base_static_url' => 'https://dev-new-maksym-aliatin235.local/static/',
-                        'base_media_url' => 'https://dev-new-maksym-aliatin235.local/media/'
+                        'base_url' => 'https://build-new-maksym-aliatin235.local/',
+                        'base_link_url' => 'https://build-new-maksym-aliatin235.local/',
+                        'base_static_url' => 'https://build-new-maksym-aliatin235.local/static/',
+                        'base_media_url' => 'https://build-new-maksym-aliatin235.local/media/'
                     ],
                     'secure' => [
-                        'base_url' => 'https://dev-new-maksym-aliatin235.local/',
-                        'base_link_url' => 'https://dev-new-maksym-aliatin235.local/',
-                        'base_static_url' => 'https://dev-new-maksym-aliatin235.local/static/',
-                        'base_media_url' => 'https://dev-new-maksym-aliatin235.local/media/'
+                        'base_url' => 'https://build-new-maksym-aliatin235.local/',
+                        'base_link_url' => 'https://build-new-maksym-aliatin235.local/',
+                        'base_static_url' => 'https://build-new-maksym-aliatin235.local/static/',
+                        'base_media_url' => 'https://build-new-maksym-aliatin235.local/media/'
                     ]
                 ]
             ]

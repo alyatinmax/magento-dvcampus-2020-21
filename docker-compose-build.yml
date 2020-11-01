@@ -24,36 +24,8 @@ services:
     sysctls:
       - net.ipv4.ip_unprivileged_port_start=0
     restart: always
-    labels:
-      - traefik.enable=true
-      # HTTP
-      - traefik.http.routers.maksym-aliatin235-local-build-http.rule=Host(`build-maksym-aliatin235.local`,`www.build-maksym-aliatin235.local`)
-      - traefik.http.routers.maksym-aliatin235-local-build-http.entrypoints=http
-      - traefik.http.routers.maksym-aliatin235-local-build-http.service=maksym-aliatin235-local-build-http
-      - traefik.http.services.maksym-aliatin235-local-build-http.loadbalancer.server.port=80
-      - traefik.http.services.maksym-aliatin235-local-build-http.loadbalancer.server.scheme=http
-      # HTTPS
-      - traefik.http.routers.maksym-aliatin235-local-build-https.rule=Host(`build-maksym-aliatin235.local`,`www.build-maksym-aliatin235.local`)
-      - traefik.http.routers.maksym-aliatin235-local-build-https.entrypoints=https
-      - traefik.http.routers.maksym-aliatin235-local-build-https.tls=true
-      - traefik.http.routers.maksym-aliatin235-local-build-https.service=maksym-aliatin235-local-build-https
-      - traefik.http.services.maksym-aliatin235-local-build-https.loadbalancer.server.port=443
-      - traefik.http.services.maksym-aliatin235-local-build-https.loadbalancer.server.scheme=https
-      # Develop with extension that allows setting livereload host and port - https://github.com/lokcito/livereload-extensions
-      - traefik.http.routers.maksym-aliatin235-local-build-livereload-https.rule=Host(`build-maksym-aliatin235.local`,`www.build-maksym-aliatin235.local`)
-      - traefik.http.routers.maksym-aliatin235-local-build-livereload-https.entrypoints=livereload-https
-      - traefik.http.routers.maksym-aliatin235-local-build-livereload-https.tls=true
-      - traefik.http.routers.maksym-aliatin235-local-build-livereload-https.service=maksym-aliatin235-local-build-livereload-https
-      - traefik.http.services.maksym-aliatin235-local-build-livereload-https.loadbalancer.server.port=35729
-      - traefik.http.services.maksym-aliatin235-local-build-livereload-https.loadbalancer.server.scheme=http
-      - traefik.http.routers.maksym-aliatin235-local-build-livereload-http.rule=Host(`build-maksym-aliatin235.local`,`www.build-maksym-aliatin235.local`)
-      - traefik.http.routers.maksym-aliatin235-local-build-livereload-http.entrypoints=livereload-http
-      - traefik.http.routers.maksym-aliatin235-local-build-livereload-http.service=maksym-aliatin235-local-build-livereload-http
-      - traefik.http.services.maksym-aliatin235-local-build-livereload-http.loadbalancer.server.port=35729
-      - traefik.http.services.maksym-aliatin235-local-build-livereload-http.loadbalancer.server.scheme=http
     # Must add extra_hosts to be written to /etc/hosts - otherwise containerized application can not curl itself
     extra_hosts:
-      - "build-maksym-aliatin235.local www.build-maksym-aliatin235.local:127.0.0.1"
       # Required for xDebug on Linux hosts till docker.host.internal is not available by default - https://github.com/docker/libnetwork/pull/2348/files
       - "host.docker.internal:172.17.0.1"
 #    links:
